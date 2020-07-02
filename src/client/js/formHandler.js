@@ -2,7 +2,7 @@ import {
     validURL
 } from './inputValidator.js';
 
-async function post(data = {}) {
+export async function post(data = {}) {
     try {
         const response = await fetch('http://localhost:8081/sentiment', {
             method: 'POST',
@@ -19,7 +19,7 @@ async function post(data = {}) {
     }
 }
 
-async function postReq(data = {}) {
+export async function postReq(data = {}) {
     const isValid = validURL(data.url);
     if (isValid) {
         const body = await post(data);
@@ -42,23 +42,17 @@ async function postReq(data = {}) {
     }
 }
 
-function updateUI(event) {
+export function updateUI(event) {
     event.preventDefault();
     const url = document.querySelector('input').value;
     const data = {
         url: url
-    }
+    };
     postReq(data).then((result) => {
         if (result)
             document.querySelector('section').innerHTML = `<span>This article is ${result} <span>`;
-    })
+    });
 }
 
 
 document.querySelector('button').addEventListener('click', updateUI);
-
-module.exports = {
-    post: post,
-    postReq: postReq,
-    updateUI: updateUI
-};

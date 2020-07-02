@@ -1,3 +1,9 @@
+document.body.innerHTML =
+    '<div>' +
+    '  <span id="username" />' +
+    '  <button id="button" />' +
+    '</div>';
+
 import {
     post
 } from '../client/js/formHandler.js';
