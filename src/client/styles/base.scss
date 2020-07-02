@@ -14,3 +14,12 @@ body {
 form {
     @extend %display;
 }
+
+section {
+    margin: auto 0;
+    font-size: 2em;
+}
+
+.hide {
+    display: none;
+}

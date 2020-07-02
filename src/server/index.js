@@ -27,9 +27,16 @@ app.post('/sentiment', (req, res) => {
         'url': req.body.url,
         'mode': 'document'
     }, (error, response) => {
-        if (error)
+        if (error) {
             console.log(error);
-        res.send(response);
+            res.send({
+                error
+            });
+        } else {
+            console.log(response);
+            res.send(response);
+        }
+
     });
 });
 
