@@ -2,15 +2,14 @@ import {
     post
 } from '../client/js/formHandler.js';
 
-describe('Testing post request', () => {
-    test('Testing post function', async () => {
+
+describe('Testing the API', async () => {
+    test('Testing th post() function', async () => {
         const input = {
             url: 'https://jamesclear.com/behavioral-psychology'
         };
-        const output = {
-            polarity: 'positive'
-        };
+        const output = 'positive';
         const data = await post(input);
-        expect(data).objectContaining(output);
+        expect(data.polarity).toEqual(output);
     });
 });
