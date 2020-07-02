@@ -24,5 +24,12 @@
         <footer>
             <i class="fas fa-copyright">2020</i>
         </footer>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
     </body>
 </html>

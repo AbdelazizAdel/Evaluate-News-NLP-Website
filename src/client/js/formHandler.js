@@ -1,3 +1,4 @@
+const fetch = require("node-fetch");
 import {
     validURL
 } from './inputValidator.js';
