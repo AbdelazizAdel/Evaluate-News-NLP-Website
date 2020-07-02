@@ -1,38 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Test</title>
+        <title>Article Analysis</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     </head>
-
     <body>
-
         <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
-            </div>
+            <h1>Article Analysis</h1>
+            <i class="fas fa-file-alt"></i>
         </header>
-
         <main>
-            <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
-                </form>
-            <section>
-
-            <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
-            </section>
+            <form>
+                <label for="url">URL</label>
+                <input type="text" name="url" id="url" placeholder="enter article url here">
+                <button type="submit">Analyze</button>
+            </form>
         </main>
+        <section>
 
+        </section>
         <footer>
-            <p>This is a footer</p>
+            <i class="fas fa-copyright">2020</i>
         </footer>
-
     </body>
 </html>

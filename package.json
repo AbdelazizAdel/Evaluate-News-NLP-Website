@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "webpack-dev-server --config webpack.dev.js --open",
-    "build-prod": "webpack --config webpack.prod.js",
+    "build-prod": "webpack --config webpack.prod.js --watch",
     "start": "node src/server/index.js"
   },
   "keywords": [],
@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "aylien_textapi": "^0.7.0",
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "webpack": "^4.43.0",

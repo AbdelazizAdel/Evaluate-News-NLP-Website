@@ -8,6 +8,10 @@ const {
 module.exports = {
     mode: 'development',
     entry: './src/client/index.js',
+    output: {
+        libraryTarget: 'var',
+        library: 'Client'
+    },
     module: {
         rules: [{
                 test: '/\.js$/',

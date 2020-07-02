@@ -1,14 +1,16 @@
-body {
+%display {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: center;
 }
 
-main {
-    flex: 2;
+body {
+    @extend %display;
+    background-image: linear-gradient(to right, #bdc3c7, #2c3e50);
+    font-family: 'Orbitron', sans-serif;
+    height: 97vh;
 }
 
-section {
-    max-width: 800px;
-    margin: 50px auto;
+form {
+    @extend %display;
 }
