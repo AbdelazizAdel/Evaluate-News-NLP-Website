@@ -24,3 +24,5 @@ This is an Article Analysis website that analayzes articles and informs the user
 
 3. If you want to run the project in the development environment, in step 4 type "npm run build-dev" instead of "npm run build-prod" 
 but please note that in the development environment I am using webpack-dev-server so you won't be able to analyze the article. If you want to analyze your articles then use the production environment not the development environment.
+
+4. If you want to run the unit tests then type the command "npm run test".
