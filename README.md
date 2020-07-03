@@ -12,15 +12,10 @@ This is an Article Analysis website that analayzes articles and informs the user
 7. Enter the url of the article you want to analyze in the url field and then click analyze.
 
 **Challenges:**
-1. I have started from scratch so figuring out what to do in the beginning was challenging as there was no starter code like what happend in the lessons.
 
-2. figuring out how to integrate the api using sdk and using enviroment variables was new.
+1. figuring out how to integrate the api using sdk and using enviroment variables was new.
 
-3. figuring out how use jest to make tests for asynchronous functions that use fetch api and manipulate the dom was very challenging for me as I had to mock the fetch api and the dom inorder for it to work and figuring out that the solution was to mock them was even more difficult.
-
-**Resources:**
-1. jest documentation.
-2. stackoverflow.
+2. figuring out how use jest to make tests for asynchronous functions that use fetch api and manipulate the dom was very challenging for me as I had to mock the fetch api and the dom inorder for it to work.
 
 **NOTES:**
 1. Please note that the aylien api does subjectivity anlaysis only for tweets(sentences) not documents so i have set the mode to documents and as a result i only show the polarity of the article that the url points to only and not the subjectivity. If i set the mode to tweets subjectivity analysis is possible but the results will be misleading so i didn't do it.
